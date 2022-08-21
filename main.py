@@ -37,6 +37,7 @@ if problem == "C":
     if algorithm == "F":
         print("""CONTROLS:\n 
         ENTER to go to the next step \n
+        BACKSPACE to go to the previous step \n
         F to follow the fast pointer\n
         S to follow the slow pointer\n
         A to skip to the beginning of the list \n
@@ -47,11 +48,12 @@ if problem == "C":
         1, 2, and 3 set the speed to Slow, Medium, and Fast respectively \n
         Note: Make sure you click on the game window first and have fun!
         """)
-        linked_list_cycle.run_floyd(linked_list_values, cycle_location)
+        linked_list_cycle.run(linked_list_values, cycle_location, linked_list_cycle.floyd)
 
     if algorithm == "B":
         print("""CONTROLS:\n 
         ENTER to go to the next step \n
+        BACKSPACE to go to the previous step \n
         F to follow the [f]ast hare pointer\n
         S to follow the [s]low tortoise pointer\n
         A to skip to the beginning of the list \n
@@ -62,6 +64,6 @@ if problem == "C":
         1, 2, and 3 set the speed to Slow, Medium, and Fast respectively \n
         Note: Make sure you click on the game window first and have fun!
         """)
-        linked_list_cycle.run_brent(linked_list_values, cycle_location)
+        linked_list_cycle.run(linked_list_values, cycle_location, linked_list_cycle.brent)
     
     
